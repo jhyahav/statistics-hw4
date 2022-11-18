@@ -1,0 +1,1712 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% Necessary Commands:
+\usepackage{autobreak}
+\usepackage[T1]{fontenc}
+\usepackage{relsize}
+% Set vertical space before and after dislpay equations to be longer for better redability:
+\AtBeginDocument{\setlength\abovedisplayskip{12pt}}
+\AtBeginDocument{\setlength\belowdisplayskip{12pt}}
+\AtBeginDocument{\setlength\belowdisplayshortskip{12pt}}
+\AtBeginDocument{\setlength\belowdisplayshortskip{12pt}}
+
+% Set space between words to be wider:
+\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
+
+% Convert the Lyx colors into more pleasent colors:
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{14,107,217}
+\definecolor{green}{RGB}{0,158,40}
+\definecolor{red}{RGB}{235,16,16}
+\definecolor{brown}{RGB}{164,66,0}
+\definecolor{orange}{RGB}{231,135,26}
+\definecolor{purple}{RGB}{94,53,177}
+
+% Convert the QED Symbol at the end of proofs to a solid black square (credit: Yakir Oz):
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% Make the layout more similar to Hebrew Article, which I am more used to:
+\renewcommand*{\@seccntformat}[1]{\hspace{0.5cm}\csname the#1\endcsname\hspace{0.5cm}} 
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{20}{20}\bfseries}{\thesection}{10pt}{}
+\titleformat{\subsection}{\fontsize{15}{15}\bfseries}{\thesubsection}{10pt}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{10pt}{}
+
+% Correct the reversed parentheses in labels:
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily{\hebrewfont}{David}
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\LRE{#1}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\makeatother
+
+% Create disjoint union symbols:
+\makeatletter
+\def\moverlay{\mathpalette\mov@rlay}
+\def\mov@rlay#1#2{\leavevmode\vtop{%
+   \baselineskip\z@skip \lineskiplimit-\maxdimen
+   \ialign{\hfil$\m@th#1##$\hfil\cr#2\crcr}}}
+\newcommand{\charfusion}[3][\mathord]{
+    #1{\ifx#1\mathop\vphantom{#2}\fi
+        \mathpalette\mov@rlay{#2\cr#3}
+      }
+    \ifx#1\mathop\expandafter\displaylimits\fi}
+\makeatother
+\newcommand{\cupdot}{\charfusion[\mathbin]{\cup}{\cdot}}
+\newcommand{\bigcupdot}{\charfusion[\mathop]{\bigcup}{\cdot}}
+
+
+
+\newcommand{\kaliLargeLand}{\mathop{\mathlarger{\mathlarger{\mathlarger{\land}}}}}
+\newcommand{\hebtext}[1]{\mbox{\R{\#1}}}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Style Section
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size       Larger
+	  Series     Bold
+	EndFont
+	TocLevel 1
+End
+
+
+Style Section*
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size      Larger
+	  Series     Bold
+	EndFont
+End
+
+
+Style Solution
+
+	LabelString           "פיתרון: "
+End
+
+
+Style Notation
+
+	LabelString           "סימון  \thetheorem: "
+End
+
+Style Theorem
+
+	LabelString           "משפט \thetheorem: "
+End
+
+Style Property
+
+	LabelString           "תזכורת: "
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "20pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing double
+\align center
+
+\series bold
+\size huge
+)
+\numeric on
+0365-2301
+\numeric off
+( סטטיסטיקה למדעי המחשב | תרגיל
+\family roman
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: יונתן יהב | שם משתמש: 
+\lang english
+jonathanhuck
+\lang hebrew
+ | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז: 
+\begin_inset Formula $315230417$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: דור בורשן | שם משתמש:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+dorbourshan
+\lang hebrew
+ | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז: 
+\begin_inset Formula $315780122$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape smallcaps
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Subsection
+)א(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/1.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+תרשים הפיזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/1.2.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הקוד עבור תרשים הפיזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ב(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/2.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+התרשים עם הקו החסין וקו הריבועים הפחותים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/2.1.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הקוד המשמש אותנו גם לסעיף זה וגם לסעיפים )ד( ו-)ה( שלהלן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ג(
+\end_layout
+
+\begin_layout Standard
+קל לראות מהתרשים כי קו הריבועים הפחותים מושפע הרבה יותר מתצפיות חריגות מאשר
+ הקו החסין.
+ הדבר הולם את התיאוריה כפי שראינו אותה בכיתה, שכן הראשון נקבע על בסיס שברונים
+ ואילו השני מבוסס מומנטים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ד(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/4.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+התרשים עם הקו החסין וקו הריבועים הפחותים כאשר התצפית החריגה מוסרת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ו(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape smallcaps
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+)א(
+\end_layout
+
+\begin_layout Standard
+בכל תתי-הסעיפים, נשתמש בפונקציות הבאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+פונקציות המשמשות לסעיפים הבאים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+סעיף א'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+סעיף ב'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+סעיף ג'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+4
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+סעיף ד'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+5
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/10.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+סעיף ה'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/12.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../statistics-hw3/screenshots/13.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+סעיף ו' - בונוס
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ב( 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+אנו מניחים כי יש הבדל בין מדגם בגודל זוגי למדגם בגודל אי זוגי 
+\end_layout
+
+\begin_layout Exercise*
+הוכח או הפרך אם מדובר בתמצית למיקום 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראשית ניזכר בהגדרה לתמצית למיקום.
+ 
+\end_layout
+
+\begin_layout Definition*
+תמצית למיקום היא פונקציה 
+\begin_inset Formula $T:\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ המקיימת: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a\in\mathbb{R}.\ \!T\left(\overrightarrow{X}+a\overrightarrow{I}\right)=T\left(\overrightarrow{X}\right)+a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a\in\mathbb{R}.\ \!T\left(a\overrightarrow{X}\right)=aT\left(\overrightarrow{X}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+האחוזון ה 
+\begin_inset Formula $90$
+\end_inset
+
+ : 
+\series bold
+הפרכה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X=[0,1]$
+\end_inset
+
+ האחוזון ה 
+\begin_inset Formula $90$
+\end_inset
+
+ אם כך הוא 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ נקבע 
+\begin_inset Formula $a=-1$
+\end_inset
+
+.
+ ולכן 
+\begin_inset Formula $a\overrightarrow{X}=\left[-1,0\right]$
+\end_inset
+
+ וכעת האחוזון ה 
+\begin_inset Formula $90$
+\end_inset
+
+ הוא 
+\begin_inset Formula $0$
+\end_inset
+
+ אם כך 
+\begin_inset Formula 
+\[
+0=T\left(a\overrightarrow{X}\right)\not=aT\left(\overrightarrow{X}\right)=-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ממוצע קצוץ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ : 
+\series bold
+הפרכה
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתבונן ממוצע קצוץ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ עם 
+\begin_inset Formula $\alpha=0.5$
+\end_inset
+
+.
+ מדובר בחציון.
+ נתבונן במדגם זוגי 
+\begin_inset Formula $\left[[1,2]\right]$
+\end_inset
+
+ וניקח 
+\begin_inset Formula $a=-1$
+\end_inset
+
+ .
+ אם כך 
+\begin_inset Formula 
+\[
+-2=T\left(a\overrightarrow{X}\right)\not=aT\left(\overrightarrow{X}\right)=-1
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מדד 
+\begin_inset Formula $IQR$
+\end_inset
+
+ 
+\series bold
+הפרכה 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ניזכר כי 
+\begin_inset Formula $IQR=x_{0.75}-x_{0.25}$
+\end_inset
+
+ נתבונן ב 
+\begin_inset Formula $X=\left[1,2,3,8\right]$
+\end_inset
+
+ בבירור 
+\begin_inset Formula $x_{0.25}=1,x_{0.75}=3$
+\end_inset
+
+ נתבונן ב 
+\begin_inset Formula $-X=\left[-8,-3,-2,-1\right]$
+\end_inset
+
+ בבירור 
+\begin_inset Formula $\overline{x_{0.25}}=-8,\overline{x_{0.75}}=-2$
+\end_inset
+
+ אם כך 
+\begin_inset Formula 
+\[
+T\left(-\overrightarrow{X}\right)=-8+2=-6\neq3-1=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\min\left(\bar{X},Md\right)$
+\end_inset
+
+ - 
+\series bold
+הפרכה 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עבור מדגם זוגי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=\left[0,1\right]$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\bar{X}=0.5$
+\end_inset
+
+ וכן 
+\begin_inset Formula $Md\left(X\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\min\left(\bar{X},Md\right)=0$
+\end_inset
+
+ אולם עבור 
+\begin_inset Formula $-X=\left[-1,0\right]$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $Md\left(-X\right)=-1$
+\end_inset
+
+ ו 
+\begin_inset Formula $\overline{-X}=-0.5$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+-1=T\left(-X\right)\neq-T\left(X\right)=0
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+סכום של שתי תמציות מיקום : 
+\series bold
+הפרכה 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $T\left(X\right)=T_{1}\left(X\right)+T_{2}\left(X\right)$
+\end_inset
+
+ יהיי 
+\begin_inset Formula $a\not=0$
+\end_inset
+
+ אם כך 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(X+a\right)=T_{1}\left(X+a\right)+T_{2}\left(X+a\right)=T_{1}\left(X\right)+T_{2}\left(X\right)+2a=T\left(X\right)+2a
+\]
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape smallcaps
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+)א(
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נוכיח
+\series default
+ שמדובר בתמצית לפיזור על-פי התנאים שראינו בהרצאה:
+\end_layout
+
+\begin_layout Itemize
+אינווריאנטיות להזזה בקבוע כלשהו 
+\begin_inset Formula $a$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+)נשים לב שהזזת כל המדגם ב-
+\begin_inset Formula $a$
+\end_inset
+
+ תגרום להזזה של הממוצע גם כן ב-
+\begin_inset Formula $a$
+\end_inset
+
+(
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\left(X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}+a-a-\overline{x}\right){}^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(\left(x_{i}+a\right)-\left(\overline{x}+a\right)\right){}^{2}}=S\left(X+a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אקוויוריאנטיות להכפלה אי-שלילית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aS\left(X\right)=a\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{a^{2}}\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}a^{2}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}a^{2}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(ax_{i}-a\overline{x}\right)^{2}}=S\left(aX\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אינווריאנטיות להיפוך סימן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\left(-X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(\left(-x_{i}\right)-\left(\overline{-x}\right)\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(-x_{i}+\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(-1\left(x_{i}-\overline{x}\right)\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(-1\right)^{2}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=S\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ב(
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נקודת השבירה האסימפטוטית של S היא 
+\numeric on
+0
+\series default
+\numeric off
+, כלומר מדובר בתמצית שאינה חסינה.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+S היא תמצית מבוססת מומנטים, ועל כן נוכל לשנות אותה ללא הכר תוך שינוי תצפית
+ יחידה )כלומר, 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+ מכלל התצפיות( לערך גדול כרצוננו.
+ בלי הגבלת הכלליות, נשנה את 
+\begin_inset Formula $\text{x_{1}}$
+\end_inset
+
+לערך גדול כרצוננו ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}\rightarrow\infty\Rightarrow\overline{x}\rightarrow\infty\Rightarrow S\left(X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}\ge\sqrt{\frac{1}{n}\sum_{i=2}^{n}\left(x_{i}-\overline{x}\right)^{2}}\rightarrow\sqrt{\frac{1}{n}\sum_{i=2}^{n}\left(x_{i}-\infty\right)^{2}}=\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ג(
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נוכיח
+\series default
+ שממוצע של שתי תמציות לנטייה היא תמצית לנטייה לפי התכונות שראינו בהרצאה.
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $T,S$
+\end_inset
+
+ תמציות לנטייה.
+ נראה כי 
+\begin_inset Formula $\frac{T+S}{2}$
+\end_inset
+
+ מקיימת את התנאים הנדרשים:
+\end_layout
+
+\begin_layout Itemize
+אינווריאנטיות תחת הזזה והכפלה בקבועים חיוביים: יהיו 
+\begin_inset Formula $a>0,b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{T+S}{2}\left(aX+b\right)=\frac{1}{2}\left(T\left(aX+b\right)+S\left(aX+b\right)\right)=\frac{1}{2}\left(T\left(X\right)+S\left(X\right)\right)=\frac{T+S}{2}\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר המעבר השני נובע מהיות 
+\begin_inset Formula $T,S$
+\end_inset
+
+ תמציות לנטייה.
+ כך יהיה גם ביתר התכונות שנוכיח.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+היפוך סימן משנה כיוון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{T+S}{2}\left(-X\right)=\frac{1}{2}\left(T\left(-X\right)+S\left(-X\right)\right)=\frac{1}{2}\left(-T\left(X\right)-S\left(X\right)\right)=-\frac{T+S}{2}\left(X\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $SK\left(i\right)$
+\end_inset
+
+ פונקציה עולה עבור 
+\begin_inset Formula $i>\frac{n}{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\frac{T+S}{2}>0$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח ש-
+\begin_inset Formula $SK\left(i\right)$
+\end_inset
+
+ פונקציה עולה עבור 
+\begin_inset Formula $i>\frac{n}{2}$
+\end_inset
+
+.
+ אז מפני שידוע ש-
+\begin_inset Formula $T,S$
+\end_inset
+
+ תמציות לנטייה, נקבל:
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(X\right)>0\wedge S\left(X\right)>0\Rightarrow T+S\left(X\right)>0\Rightarrow\frac{T+S}{2}\left(X\right)>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $SK\left(i\right)$
+\end_inset
+
+ פונקציה יורדת עבור 
+\begin_inset Formula $i>\frac{n}{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\frac{T+S}{2}<0$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח ש-
+\begin_inset Formula $SK\left(i\right)$
+\end_inset
+
+ פונקציה יורדת עבור 
+\begin_inset Formula $i>\frac{n}{2}$
+\end_inset
+
+.
+ אז מפני שידוע ש-
+\begin_inset Formula $T,S$
+\end_inset
+
+ תמציות לנטייה, נקבל:
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(X\right)<0\wedge S\left(X\right)<0\Rightarrow T+S\left(X\right)<0\Rightarrow\frac{T+S}{2}\left(X\right)<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ד(
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נוכיח
+\series default
+ את הטענה בכך שנראה שנקודת השבירה האסימפטוטית של השברון ה-
+\numeric on
+
+\begin_inset Formula $0.9$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+חיובית.
+\end_layout
+
+\begin_layout Standard
+נשים לב כי על מנת לשנות את התמצית ללא הכר, נצטרך לשנות לפחות 
+\begin_inset Formula $\frac{1}{10}$
+\end_inset
+
+ מהתצפיות )את העשירית העליונה של התצפיות(, 
+\series bold
+והדבר איננו תלוי בגודל המדגם.
+
+\series default
+ משמע הדבר הוא ש-
+\begin_inset Formula $\alpha$
+\end_inset
+
+ תעמוד על 
+\begin_inset Formula $\frac{1}{10}$
+\end_inset
+
+ גם כאשר גודל המדגם שואף לאינסוף, בהתאם לאופן בו הגדרנו את נקודת השבירה
+ האסימפטוטית של תמצית ואת החסינות בהתאם לכך.
+ 
+\end_layout
+
+\end_body
+\end_document

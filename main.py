@@ -3,7 +3,6 @@ from math import ceil
 import pandas as pd
 import matplotlib.pyplot as pl
 import numpy as np
-import scipy.stats as stats
 
 # q1
 path = "./heights.csv"
@@ -15,7 +14,7 @@ weights = df["WEIGHT"].to_numpy()
 pl.scatter(x=heights, y=weights, color="black", marker=".")
 
 # sections b, d, e
-MAX_X = 1500
+MAX_X = 1500 # change to 275 when removing outlier
 median = lambda data: data[ceil(data.size / 2) - 1 * (data.size + 1 % 2)]
 [lower, mid, upper] = np.array_split(df, 3)
 lower_heights = lower["HEIGHT"].to_numpy()
@@ -30,7 +29,6 @@ x_upper = median(upper_heights)
 y_upper = median(upper_weights)
 
 b_RL = (y_upper - y_lower) / (x_upper - x_lower)
-print(b_RL)
 
 r_is = []
 for i in range(heights.size):
@@ -48,10 +46,15 @@ pl.scatter([x_lower, x_upper],  [y_lower, y_upper], color="red")
 
 var_x = np.var(heights)
 cov_x_y = np.cov(heights, weights)[0][1]
+correlation_x_y = np.corrcoef(heights, weights)[0][1]
+print("Correlation coefficient between X and Y:", correlation_x_y)
+R_squared = correlation_x_y ** 2 # as we saw in class
+print("R^2 = r^2 =", R_squared)
 x_avg = heights.sum() / heights.size
 y_avg = weights.sum() / weights.size
 
 b_LS = cov_x_y / var_x
+print("Sum of squares slope:", b_LS)
 a_LS = y_avg - b_LS * x_avg
 
 x_LS = np.linspace(50, MAX_X, 1000)
