@@ -14,7 +14,7 @@ weights = df["WEIGHT"].to_numpy()
 # section  a
 pl.scatter(x=heights, y=weights, color="black", marker=".")
 
-# section b
+# sections b, d, e
 MAX_X = 1500
 median = lambda data: data[ceil(data.size / 2) - 1 * (data.size + 1 % 2)]
 [lower, mid, upper] = np.array_split(df, 3)
@@ -58,4 +58,7 @@ x_LS = np.linspace(50, MAX_X, 1000)
 y_LS = a_LS + b_LS * x_LS
 pl.plot(x_LS, y_LS, "blue")
 
+pl.title("Correlation btw Height & Weight, w/ Resistant Line and RSS - Full Dataset")
+pl.xlabel("Height")
+pl.ylabel("Weight")
 pl.show()
