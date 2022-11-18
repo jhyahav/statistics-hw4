@@ -15,6 +15,7 @@ weights = df["WEIGHT"].to_numpy()
 pl.scatter(x=heights, y=weights, color="black", marker=".")
 
 # section b
+MAX_X = 1500
 median = lambda data: data[ceil(data.size / 2) - 1 * (data.size + 1 % 2)]
 [lower, mid, upper] = np.array_split(df, 3)
 lower_heights = lower["HEIGHT"].to_numpy()
@@ -39,10 +40,22 @@ r_is.sort()
 a_RL = median(np.array(r_is))
 print(a_RL)
 
-x = np.linspace(50, 1500, 1000)
-y = a_RL + b_RL * x
+x_RL = np.linspace(50, MAX_X, 1000)
+y_RL = a_RL + b_RL * x_RL
 
-pl.plot(x, y, "red")
+pl.plot(x_RL, y_RL, "red")
 pl.scatter([x_lower, x_upper],  [y_lower, y_upper], color="red")
+
+var_x = np.var(heights)
+cov_x_y = np.cov(heights, weights)[0][1]
+x_avg = heights.sum() / heights.size
+y_avg = weights.sum() / weights.size
+
+b_LS = cov_x_y / var_x
+a_LS = y_avg - b_LS * x_avg
+
+x_LS = np.linspace(50, MAX_X, 1000)
+y_LS = a_LS + b_LS * x_LS
+pl.plot(x_LS, y_LS, "blue")
 
 pl.show()
