@@ -512,7 +512,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-הקוד המשמש אותנו גם לסעיף זה וגם לסעיפים )ד( ו-)ה( שלהלן
+הקוד המשמש אותנו לסעיף )ב( וגם לסעיפים )ד( ו-)ה( שלהלן
 \end_layout
 
 \end_inset
@@ -555,6 +555,50 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/3.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מקדם המתאם, השונות המוסברת, ושיפוע קו הריבועים הפחותים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+לפי נתותנים אלו, היינו מסיקים שלא קיים קשר לינארי בין גובה למשקל.
+
+\series default
+ השונות המוסברת קרובה מאוד לאפס, מה שמעיד על מידת התאמה נמוכה של המודל הלינארי.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -563,6 +607,99 @@ status open
 
 \begin_layout Subsection
 )ה(
+\end_layout
+
+\begin_layout Standard
+עבור סעיף זה, הסרנו את התצפית )
+\numeric on
+69,1480
+\numeric off
+(, שהגובה הרשום בה חריג ביחס ליתר הנתונים.
+ ניתן להעריך שנפלה טעות ברישום התצפית ונוסף אפס מיותר לגובה )זאת אומרת,
+ שהגובה המקורי היה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+148
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1480
+\numeric off
+(.
 \end_layout
 
 \begin_layout Standard
@@ -601,6 +738,48 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/3.2.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מקדם המתאם, השונות המוסברת, ושיפוע קו הריבועים הפחותים לאחר הסרת התצפית
+ החריגה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+לפי נתונים אלו, היינו מסיקים שקיים קשר לינארי חלש עד בינוני בין גובה למשקל.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -609,6 +788,18 @@ status open
 
 \begin_layout Subsection
 )ו(
+\end_layout
+
+\begin_layout Standard
+מהסעיפים הקודמים, 
+\series bold
+ניכר שתצפיות חריגות עלולות לפגום במידה רבה באחוז השונות המוסברת של מודל
+ סכום הריבועים הפחותים עבור מדגם.
+
+\series default
+ ראינו לעיל דוגמה מפורשת למקרה בו תצפית חריגה יחידה קירבה אחוז שונות מוסברת
+ לא מבוטל לאפס וכך גרמה לנו להסיק שלא קיים קשר לינארי בעוד שניתן להבחין
+ בקשר לינארי ברור כאשר אותה התצפית מוסרת מהמדגם הנבחן.
 \end_layout
 
 \begin_layout Standard
