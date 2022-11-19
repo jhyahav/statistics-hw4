@@ -845,10 +845,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-בכל תתי-הסעיפים, נשתמש בפונקציות הבאות:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -858,7 +854,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../statistics-hw3/screenshots/1.png
+	filename images/5.1.png
+	rotateOrigin center
 
 \end_inset
 
@@ -869,323 +866,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-פונקציות המשמשות לסעיפים הבאים
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-
-\numeric on
-1
-\numeric off
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/2.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/3.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-סעיף א'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-2
-\numeric off
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/4.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/5.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-סעיף ב'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-3
-\numeric off
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/6.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/7.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-סעיף ג'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-4
-\numeric off
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/8.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/9.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-סעיף ד'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-5
-\numeric off
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/10.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/11.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-סעיף ה'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\numeric on
-6
-\numeric off
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/12.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../statistics-hw3/screenshots/13.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-סעיף ו' - בונוס
+הקוד להגרלת הוקטור
 \end_layout
 
 \end_inset
@@ -1210,282 +891,513 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
 
-\series bold
-אנו מניחים כי יש הבדל בין מדגם בגודל זוגי למדגם בגודל אי זוגי 
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.2.png
+	rotateOrigin center
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Exercise*
-הוכח או הפרך אם מדובר בתמצית למיקום 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הקוד ליצירת הוקטור 
+\begin_inset Formula $Y$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 \begin_inset Separator plain
 \end_inset
 
 
 \end_layout
 
+\begin_layout Subsection
+)ג( 
+\end_layout
+
 \begin_layout Standard
-ראשית ניזכר בהגדרה לתמצית למיקום.
+מכיוון שהוקטור 
+\begin_inset Formula $Y$
+\end_inset
+
+ התקבל באמצעות הפעלת פונקציה לינארית על הוקטור 
+\begin_inset Formula $X$
+\end_inset
+
+, ישנה תלות מלאה של הראשון בשני, ואפשר להסיק שמקדם המתאם התיאוטרי הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
-\end_layout
-
-\begin_layout Definition*
-תמצית למיקום היא פונקציה 
-\begin_inset Formula $T:\mathbb{R}^{n}\rightarrow\mathbb{R}$
-\end_inset
-
- המקיימת: 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\forall a\in\mathbb{R}.\ \!T\left(\overrightarrow{X}+a\overrightarrow{I}\right)=T\left(\overrightarrow{X}\right)+a$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\forall a\in\mathbb{R}.\ \!T\left(a\overrightarrow{X}\right)=aT\left(\overrightarrow{X}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-האחוזון ה 
-\begin_inset Formula $90$
-\end_inset
-
- : 
-\series bold
-הפרכה
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-נסמן 
-\begin_inset Formula $X=[0,1]$
-\end_inset
-
- האחוזון ה 
-\begin_inset Formula $90$
-\end_inset
-
- אם כך הוא 
-\begin_inset Formula $1$
-\end_inset
-
-.
- נקבע 
-\begin_inset Formula $a=-1$
-\end_inset
-
-.
- ולכן 
-\begin_inset Formula $a\overrightarrow{X}=\left[-1,0\right]$
-\end_inset
-
- וכעת האחוזון ה 
-\begin_inset Formula $90$
-\end_inset
-
- הוא 
-\begin_inset Formula $0$
-\end_inset
-
- אם כך 
-\begin_inset Formula 
-\[
-0=T\left(a\overrightarrow{X}\right)\not=aT\left(\overrightarrow{X}\right)=-1
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-ממוצע קצוץ 
-\begin_inset Formula $\alpha$
-\end_inset
-
- : 
-\series bold
-הפרכה
+\family default
 \series default
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-נתבונן ממוצע קצוץ 
-\begin_inset Formula $\alpha$
-\end_inset
-
- עם 
-\begin_inset Formula $\alpha=0.5$
-\end_inset
-
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
 .
- מדובר בחציון.
- נתבונן במדגם זוגי 
-\begin_inset Formula $\left[[1,2]\right]$
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.3.png
+	rotateOrigin center
+
 \end_inset
 
- וניקח 
-\begin_inset Formula $a=-1$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הקוד לחישוב מקדם המתאם האמפירי
+\end_layout
+
 \end_inset
 
- .
- אם כך 
-\begin_inset Formula 
-\[
--2=T\left(a\overrightarrow{X}\right)\not=aT\left(\overrightarrow{X}\right)=-1
-\]
+
+\end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+ואכן, בדיקה לפי המדגם שהגרלנו מניבה מקדם מתאם אמפירי קרוב מאוד ל-
+\numeric on
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.4.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מקדם המתאם האמפירי כפי שמתקבל מחישוב בעזרת פייתון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ד( 
+\end_layout
+
+\begin_layout Standard
+קו הריבועים הפחותים אמור להוות מודל לקּשר לינארי ככל שקיים בין המשתנים.
+ מפני שהוקטור 
+\begin_inset Formula $Y$
+\end_inset
+
+ התקבל באמצעות הפעלת פונקציה לינארית על הוקטור 
+\begin_inset Formula $X$
+\end_inset
+
+, בפרט כזו ששיפועה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+, נצפה שבתור מודל לקשר, קו הריבועים הפחותים יהיה בעל אותו השיפוע.
  
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-מדד 
-\begin_inset Formula $IQR$
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.5.png
+	rotateOrigin center
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הקוד לחישוב שיפוע קו הריבועים הפחותים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואכן, בדיקה לפי המדגם שהגרלנו נותנת שיפוע קו ריבועים פחותים אמפירי קרוב
+ מאוד ל-
+\numeric on
+5
+\numeric off
+, כאשר את ההפרש ניתן לייחס לגודל המדגם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.6.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+שיפוע קו הריבועים הפחותים האמפירי כפי שמתקבל מחישוב בעזרת פייתון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לצורך העניין, בהגדלת המדגם מ-
+\numeric on
+30
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
-\series bold
-הפרכה 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-ניזכר כי 
-\begin_inset Formula $IQR=x_{0.75}-x_{0.25}$
-\end_inset
-
- נתבונן ב 
-\begin_inset Formula $X=\left[1,2,3,8\right]$
-\end_inset
-
- בבירור 
-\begin_inset Formula $x_{0.25}=1,x_{0.75}=3$
-\end_inset
-
- נתבונן ב 
-\begin_inset Formula $-X=\left[-8,-3,-2,-1\right]$
-\end_inset
-
- בבירור 
-\begin_inset Formula $\overline{x_{0.25}}=-8,\overline{x_{0.75}}=-2$
-\end_inset
-
- אם כך 
-\begin_inset Formula 
-\[
-T\left(-\overrightarrow{X}\right)=-8+2=-6\neq3-1=2
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\min\left(\bar{X},Md\right)$
-\end_inset
-
- - 
-\series bold
-הפרכה 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-עבור מדגם זוגי
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $X=\left[0,1\right]$
-\end_inset
-
- ולכן 
-\begin_inset Formula $\bar{X}=0.5$
-\end_inset
-
- וכן 
-\begin_inset Formula $Md\left(X\right)=0$
-\end_inset
-
- ולכן 
-\begin_inset Formula $\min\left(\bar{X},Md\right)=0$
-\end_inset
-
- אולם עבור 
-\begin_inset Formula $-X=\left[-1,0\right]$
-\end_inset
-
- ולכן 
-\begin_inset Formula $Md\left(-X\right)=-1$
-\end_inset
-
- ו 
-\begin_inset Formula $\overline{-X}=-0.5$
-\end_inset
-
- ולכן 
-\begin_inset Formula 
-\[
--1=T\left(-X\right)\neq-T\left(X\right)=0
-\]
-
-\end_inset
-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\numeric on
+10000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל תוצאה אמפירית אף קרובה יותר לתיאורטית שחזינו:
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-סכום של שתי תמציות מיקום : 
-\series bold
-הפרכה 
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-נסמן 
-\begin_inset Formula $T\left(X\right)=T_{1}\left(X\right)+T_{2}\left(X\right)$
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.8.png
+	rotateOrigin center
+
 \end_inset
 
- יהיי 
-\begin_inset Formula $a\not=0$
-\end_inset
 
- אם כך 
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-T\left(X+a\right)=T_{1}\left(X+a\right)+T_{2}\left(X+a\right)=T_{1}\left(X\right)+T_{2}\left(X\right)+2a=T\left(X\right)+2a
-\]
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
-\end_inset
-
+\begin_layout Plain Layout
+שיפוע קו הריבועים הפחותים האמפירי כפי שמתקבל מחישוב בעזרת פייתון עם מדגם
+ בגודל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10000
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/5.7.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+מקדם המתאם ושיפוע קו הריבועים הפחותים האמפיריים עם הרעש שהוגדר עבור סעיף
+ )ה(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ו(
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ז(
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+)ח( 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1528,77 +1440,6 @@ T\left(X+a\right)=T_{1}\left(X+a\right)+T_{2}\left(X+a\right)=T_{1}\left(X\right
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-נוכיח
-\series default
- שמדובר בתמצית לפיזור על-פי התנאים שראינו בהרצאה:
-\end_layout
-
-\begin_layout Itemize
-אינווריאנטיות להזזה בקבוע כלשהו 
-\begin_inset Formula $a$
-\end_inset
-
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-)נשים לב שהזזת כל המדגם ב-
-\begin_inset Formula $a$
-\end_inset
-
- תגרום להזזה של הממוצע גם כן ב-
-\begin_inset Formula $a$
-\end_inset
-
-(
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-S\left(X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}+a-a-\overline{x}\right){}^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(\left(x_{i}+a\right)-\left(\overline{x}+a\right)\right){}^{2}}=S\left(X+a\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-אקוויוריאנטיות להכפלה אי-שלילית:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-aS\left(X\right)=a\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{a^{2}}\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}a^{2}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}a^{2}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(ax_{i}-a\overline{x}\right)^{2}}=S\left(aX\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-אינווריאנטיות להיפוך סימן:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-S\left(-X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(\left(-x_{i}\right)-\left(\overline{-x}\right)\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(-x_{i}+\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(-1\left(x_{i}-\overline{x}\right)\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(-1\right)^{2}\left(x_{i}-\overline{x}\right)^{2}}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}=S\left(X\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -1607,52 +1448,6 @@ S\left(-X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(\left(-x_{i}\right)-\left(
 
 \begin_layout Subsection
 )ב(
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-נקודת השבירה האסימפטוטית של S היא 
-\numeric on
-0
-\series default
-\numeric off
-, כלומר מדובר בתמצית שאינה חסינה.
- 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-S היא תמצית מבוססת מומנטים, ועל כן נוכל לשנות אותה ללא הכר תוך שינוי תצפית
- יחידה )כלומר, 
-\begin_inset Formula $\frac{1}{n}$
-\end_inset
-
- מכלל התצפיות( לערך גדול כרצוננו.
- בלי הגבלת הכלליות, נשנה את 
-\begin_inset Formula $\text{x_{1}}$
-\end_inset
-
-לערך גדול כרצוננו ונקבל:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-x_{1}\rightarrow\infty\Rightarrow\overline{x}\rightarrow\infty\Rightarrow S\left(X\right)=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}}\ge\sqrt{\frac{1}{n}\sum_{i=2}^{n}\left(x_{i}-\overline{x}\right)^{2}}\rightarrow\sqrt{\frac{1}{n}\sum_{i=2}^{n}\left(x_{i}-\infty\right)^{2}}=\infty
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1667,164 +1462,6 @@ x_{1}\rightarrow\infty\Rightarrow\overline{x}\rightarrow\infty\Rightarrow S\left
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-נוכיח
-\series default
- שממוצע של שתי תמציות לנטייה היא תמצית לנטייה לפי התכונות שראינו בהרצאה.
-\end_layout
-
-\begin_layout Standard
-תהיינה 
-\begin_inset Formula $T,S$
-\end_inset
-
- תמציות לנטייה.
- נראה כי 
-\begin_inset Formula $\frac{T+S}{2}$
-\end_inset
-
- מקיימת את התנאים הנדרשים:
-\end_layout
-
-\begin_layout Itemize
-אינווריאנטיות תחת הזזה והכפלה בקבועים חיוביים: יהיו 
-\begin_inset Formula $a>0,b$
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{T+S}{2}\left(aX+b\right)=\frac{1}{2}\left(T\left(aX+b\right)+S\left(aX+b\right)\right)=\frac{1}{2}\left(T\left(X\right)+S\left(X\right)\right)=\frac{T+S}{2}\left(X\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-כאשר המעבר השני נובע מהיות 
-\begin_inset Formula $T,S$
-\end_inset
-
- תמציות לנטייה.
- כך יהיה גם ביתר התכונות שנוכיח.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-היפוך סימן משנה כיוון:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{T+S}{2}\left(-X\right)=\frac{1}{2}\left(T\left(-X\right)+S\left(-X\right)\right)=\frac{1}{2}\left(-T\left(X\right)-S\left(X\right)\right)=-\frac{T+S}{2}\left(X\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-אם 
-\begin_inset Formula $SK\left(i\right)$
-\end_inset
-
- פונקציה עולה עבור 
-\begin_inset Formula $i>\frac{n}{2}$
-\end_inset
-
- אז 
-\begin_inset Formula $\frac{T+S}{2}>0$
-\end_inset
-
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-נניח ש-
-\begin_inset Formula $SK\left(i\right)$
-\end_inset
-
- פונקציה עולה עבור 
-\begin_inset Formula $i>\frac{n}{2}$
-\end_inset
-
-.
- אז מפני שידוע ש-
-\begin_inset Formula $T,S$
-\end_inset
-
- תמציות לנטייה, נקבל:
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-T\left(X\right)>0\wedge S\left(X\right)>0\Rightarrow T+S\left(X\right)>0\Rightarrow\frac{T+S}{2}\left(X\right)>0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-אם 
-\begin_inset Formula $SK\left(i\right)$
-\end_inset
-
- פונקציה יורדת עבור 
-\begin_inset Formula $i>\frac{n}{2}$
-\end_inset
-
- אז 
-\begin_inset Formula $\frac{T+S}{2}<0$
-\end_inset
-
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-נניח ש-
-\begin_inset Formula $SK\left(i\right)$
-\end_inset
-
- פונקציה יורדת עבור 
-\begin_inset Formula $i>\frac{n}{2}$
-\end_inset
-
-.
- אז מפני שידוע ש-
-\begin_inset Formula $T,S$
-\end_inset
-
- תמציות לנטייה, נקבל:
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-T\left(X\right)<0\wedge S\left(X\right)<0\Rightarrow T+S\left(X\right)<0\Rightarrow\frac{T+S}{2}\left(X\right)<0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -1833,70 +1470,6 @@ T\left(X\right)<0\wedge S\left(X\right)<0\Rightarrow T+S\left(X\right)<0\Rightar
 
 \begin_layout Subsection
 )ד(
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-נוכיח
-\series default
- את הטענה בכך שנראה שנקודת השבירה האסימפטוטית של השברון ה-
-\numeric on
-
-\begin_inset Formula $0.9$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-חיובית.
-\end_layout
-
-\begin_layout Standard
-נשים לב כי על מנת לשנות את התמצית ללא הכר, נצטרך לשנות לפחות 
-\begin_inset Formula $\frac{1}{10}$
-\end_inset
-
- מהתצפיות )את העשירית העליונה של התצפיות(, 
-\series bold
-והדבר איננו תלוי בגודל המדגם.
-
-\series default
- משמע הדבר הוא ש-
-\begin_inset Formula $\alpha$
-\end_inset
-
- תעמוד על 
-\begin_inset Formula $\frac{1}{10}$
-\end_inset
-
- גם כאשר גודל המדגם שואף לאינסוף, בהתאם לאופן בו הגדרנו את נקודת השבירה
- האסימפטוטית של תמצית ואת החסינות בהתאם לכך.
- 
 \end_layout
 
 \end_body
