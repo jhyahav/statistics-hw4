@@ -501,6 +501,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/2.1.png
+	scale 60
 	rotateOrigin center
 
 \end_inset
@@ -713,6 +714,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/4.png
+	scale 80
 	rotateOrigin center
 
 \end_inset
@@ -748,6 +750,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/3.2.png
+	scale 80
 	rotateOrigin center
 
 \end_inset
@@ -879,13 +882,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 )ב( 
 \end_layout
@@ -924,13 +920,6 @@ status open
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Separator plain
 \end_inset
 
 
@@ -1054,13 +1043,6 @@ status open
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
 \end_inset
 
 
@@ -1254,76 +1236,6 @@ status open
 נקבל תוצאה אמפירית אף קרובה יותר לתיאורטית שחזינו:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/5.8.png
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-שיפוע קו הריבועים הפחותים האמפירי כפי שמתקבל מחישוב בעזרת פייתון עם מדגם
- בגודל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-10000
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 )ה(
 \end_layout
@@ -1333,7 +1245,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1365,13 +1277,6 @@ status open
 \end_layout
 
 \begin_layout Subsection
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 )ו(
 \end_layout
 
@@ -1380,14 +1285,10 @@ status open
 \end_layout
 
 \begin_layout Subsection
-\begin_inset Separator plain
-\end_inset
-
-
+)ז(
 \end_layout
 
-\begin_layout Subsection
-)ז(
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1398,7 +1299,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/5.9.png
-	rotateOrigin center
+	scale 80
 
 \end_inset
 
@@ -1422,7 +1323,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1433,7 +1334,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/5.10.png
-	rotateOrigin center
+	scale 80
 
 \end_inset
 
@@ -1457,7 +1358,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1468,7 +1369,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/5.11.png
-	rotateOrigin center
+	scale 80
 
 \end_inset
 
@@ -1487,10 +1388,6 @@ status open
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator plain
 \end_inset
 
 
@@ -1547,14 +1444,303 @@ status open
 \end_layout
 
 \begin_layout Subsection
+)ד(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Correlation btw Income & Life Expectancy, RSS.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $Correlation\ btw\ Income\ and\ Life\ Expectancy$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים כי 
+\begin_inset Formula 
+\begin{align*}
+Y & =\left(2.5\cdot10^{-5}\right)X+67.85\\
+R^{2} & =0.39
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Correlation btw Education & Life Expectancy, RSS.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $Correlation\ btw\ Education\ and\ Life\ Expectancy$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים כי 
+\begin_inset Formula 
+\begin{align*}
+Y & =\left(0.85\right)X+63.09\\
+R^{2} & =0.103
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו רואים כי המודל בעל השונות המוסברת הגדולה ביותר הוא מודל ההכנסה.
+ 
+\end_layout
+
+\begin_layout Standard
+הדבר אינו מפתיע וזאת משום שאנו משערים כי אנשים בעלי הכנסה גבוהה יותר, יכולים
+ לספק לעצמם רפואה מתקדמת טובה יותר.
+ 
+\end_layout
+
+\begin_layout Subsection
+)ה(
+\end_layout
+
+\begin_layout Standard
+נבצע טרנספורמציה לוגריתמית ל
+\begin_inset Formula $Income$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Correlation btw Income & Life Expectancy, RSS log2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $Correlation\ btw\ Education\ and\ Life\ Expectancy\ \log_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים כי 
+\begin_inset Formula 
+\begin{align*}
+Y & =1.93X+42.55\\
+R^{2} & =0.588
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שיפור של מעל 
+\begin_inset Formula $40\%$
+\end_inset
+
+ עבור השונות המוסברת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape smallcaps
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
 )א(
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+הוכיחו כי פונקציית הצפיפות של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מעריכי היא פונקתית צפיפות תקנית לכל 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+f\left(x\right)=\lambda e^{-\lambda x}
+\]
+
+\end_inset
+
+ נוכיח כי זוהי פונקצית צפיפות: כלומר אנו נדרשים להוכיח כי 
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\lambda e^{-\lambda x}dx=1
+\]
+
+\end_inset
+
+ אם כך נחל בחישוב 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\lambda e^{-\lambda x}dx=\int_{-\infty}^{0}0dx+\int_{0}^{\infty}\lambda e^{-\lambda x}dx=\int_{0}^{x}\lambda e^{-\lambda u}du=-\int_{0}^{x}-\lambda e^{-\lambda u}du
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $g\left(x\right)=e^{-\lambda u}$
+\end_inset
+
+ אם כך 
+\begin_inset Formula $g'\left(x\right)=-\lambda e^{-\lambda u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula 
+\begin{align*}
+-\int_{0}^{x}-\lambda e^{-\lambda u}du & =-\int_{0}^{x}g'\left(u\right)du=-g\left(u\right)|_{0}^{x}=-e^{-\lambda x}+1\\
+\lim_{x\rightarrow\infty} & -e^{-\lambda x}+1=0+1=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כנדרש מפונקציית צפיפות.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1562,10 +1748,32 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+הוכיחו את תכונת חוסר הזיכרון עבור 
+\begin_inset Formula $X\sim\exp\left(\lambda\right)$
 \end_inset
 
+ כלומר הוכח:
+\begin_inset Formula 
+\[
+\mathbb{P}\left(X>t+s|X>s\right)=\mathbb{P}\left(X>t\right)
+\]
 
+\end_inset
+
+ מההגדרה נחשב את 
+\begin_inset Formula $\mathbb{P}\left(X>t+s|X>s\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{align*}
+\mathbb{P}\left(X>t+s|X>s\right) & =\frac{\mathbb{P}\left(X>t+s,X>s\right)}{\mathbb{P}\left(X>s\right)}=\frac{\mathbb{P}\left(X>t+s\right)}{\mathbb{P}\left(X>s\right)}=\\
+= & \frac{\int_{t+s}^{\infty}\lambda e^{-\lambda x}dx}{\int_{s}^{\infty}\lambda e^{-\lambda x}dx}=\frac{\lim_{x\rightarrow\infty}-e^{-\lambda x}+e^{-\lambda\left(t+s\right)}}{\lim_{x\rightarrow\infty}-e^{-\lambda x}+e^{-\lambda\left(s\right)}}=e^{-\lambda\left(t\right)}=\mathbb{P}\left(X>t\right)
+\end{align*}
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1573,7 +1781,231 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+נחשב שונות ותוחלת 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X\right]=\int_{-\infty}^{\infty}xf\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כך נחל בחישוב 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}x\lambda e^{-\lambda x}dx=\int_{-\infty}^{0}0dx+\int_{0}^{\infty}x\cdot\lambda e^{-\lambda x}dx=-\lim_{x\rightarrow\infty}\int_{0}^{x}u\cdot-\lambda e^{-\lambda u}du
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $g\left(x\right)=e^{-\lambda u}$
+\end_inset
+
+ אם כך 
+\begin_inset Formula $g'\left(x\right)=-\lambda e^{-\lambda u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula 
+\begin{align*}
+-\int_{0}^{x}-\lambda e^{-\lambda u}u\cdot du & =-\int_{0}^{x}u\cdot g'\left(u\right)du
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת אינטגרציה בחלקים עבור 
+\begin_inset Formula $\int u\cdot g'\left(u\right)du$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x\cdot g\left(x\right)-\int g\left(u\right)du & =\int u\cdot g'\left(u\right)du
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\begin_inset Formula 
+\[
+\int g\left(u\right)du=\int e^{-\lambda u}du=-\frac{1}{\lambda}e^{-\lambda u}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula 
+\[
+-u\cdot g\left(u\right)|_{0}^{x}-\frac{1}{\lambda}e^{-\lambda u}|_{0}^{x}=-\int_{0}^{x}u\cdot g'\left(u\right)du
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+x\left(e^{-\lambda x}\right)-\frac{1}{\lambda}e^{-\lambda x}+\frac{1}{\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכעת 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X\right]=-\int_{0}^{\infty}u\cdot g'\left(u\right)du=\lim_{x\rightarrow\infty}x\left(e^{-\lambda x}\right)-\frac{1}{\lambda}e^{-\lambda x}+\frac{1}{\lambda}=\frac{1}{\lambda}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נחשב כעת 
+\begin_inset Formula 
+\[
+Var\left(X\right)=\mathbb{E}\left[X^{2}\right]-\mathbb{E}^{2}\left[X\right]
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אנו יודעים כי 
+\begin_inset Formula 
+\[
+\mathbb{E}^{2}\left[X\right]=\left(\frac{1}{\lambda}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נותר לחשב 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X^{2}\right]=\int_{-\infty}^{\infty}x^{2}\lambda e^{-\lambda x}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}-\lambda e^{-\lambda x}\cdot x^{2}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $g\left(x\right)=e^{-\lambda u}$
+\end_inset
+
+ אם כך 
+\begin_inset Formula $g'\left(x\right)=-\lambda e^{-\lambda u}$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $f'\left(x\right)=2x$
+\end_inset
+
+ אזי מאינטגרציה בחלקים 
+\begin_inset Formula 
+\[
+x^{2}\cdot g\left(x\right)-\int2u\cdot g\left(u\right)du=\int u^{2}\cdot g'\left(u\right)du\ \ \ \ \left(\#\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חישבנו ממקודם את 
+\begin_inset Formula $\mathbb{E}\left[X\right]=\int_{-\infty}^{\infty}\lambda u\cdot g\left(u\right)du$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\int_{-\infty}^{\infty}2u\cdot g\left(u\right)du=\frac{2}{\lambda^{2}}$
+\end_inset
+
+ ומתקיים כי 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\infty}x^{2}e^{-\lambda x}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נותר להכפיל במינוס את 
+\begin_inset Formula $\left(\#\right)$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X^{2}\right]=-u^{2}\cdot g\left(u\right)|_{0}^{\infty}+\frac{2}{\lambda^{2}}=\frac{2}{\lambda^{2}}
+\]
+
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+Var\left(X\right)=\mathbb{E}\left[X^{2}\right]-\mathbb{E}^{2}\left[X\right]=\frac{2}{\lambda^{2}}-\left(\frac{1}{\lambda}\right)^{2}=\left(\frac{1}{\lambda}\right)^{2}
+\]
+
 \end_inset
 
 
@@ -1581,6 +2013,158 @@ status open
 
 \begin_layout Subsection
 )ד(
+\end_layout
+
+\begin_layout Standard
+נראה שאם 
+\begin_inset Formula $X\sim\exp\left(\lambda\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $aX$
+\end_inset
+
+ גם מתפלג מעריכית.
+ 
+\end_layout
+
+\begin_layout Standard
+נחשב תחילה את פה
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula 
+\[
+F_{X}\left(x\right)=\mathbb{P}\left(X\leq x\right)=\int_{\infty}^{x}\lambda e^{-\lambda u}du=\lambda\int_{\infty}^{x}e^{-\lambda u}du=-e^{-\lambda u}|_{0}^{x}=1-e^{-\lambda x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהיי 
+\begin_inset Formula $a>0$
+\end_inset
+
+ נחשב 
+\begin_inset Formula 
+\[
+\mathbb{P}\left(aX\leq x\right)=\mathbb{P}\left(X\leq\frac{x}{a}\right)=1-e^{-\frac{\lambda}{a}x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\mu=\frac{\lambda}{a}$
+\end_inset
+
+ אם כך
+\begin_inset Formula 
+\[
+\mathbb{P}\left(aX\leq x\right)=\mathbb{P}\left(X\leq\frac{x}{a}\right)=1-e^{-\mu x}
+\]
+
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $aX\sim\exp\left(\mu\right)$
+\end_inset
+
+ כיוון שפה
+\begin_inset Quotes erd
+\end_inset
+
+מ קובעת התפלגות.
+ 
+\end_layout
+
+\begin_layout Subsection
+)ד(
+\end_layout
+
+\begin_layout Standard
+הזמן שלוקח להגיע לאוניברסיטה מתפלג מעריכית עם תוחלת של 
+\begin_inset Formula $20$
+\end_inset
+
+ דקות.
+ השיעור מתחיל עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $15$
+\end_inset
+
+ דק ויצאנו עכשיו, מה הסיכוי שלא נאחר.
+ 
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ זמן שיקח לנו להגיע לאוניברסיטה.
+ מתקיים כי 
+\begin_inset Formula $X\sim\exp\left(\lambda\right)$
+\end_inset
+
+.
+ אנו יודעים כי 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X\right]=\frac{1}{\lambda}=\frac{1}{3}
+\]
+
+\end_inset
+
+ אם כך מתקיים כי 
+\begin_inset Formula $\lambda=3$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אנו רוצים לחשב את ההסתברות הבאה:
+\begin_inset Formula 
+\[
+\mathbb{P}\left(X\leq15\right)=1-e^{-3\cdot\frac{1}{4}}=0.527
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -10,33 +10,16 @@ path = "./countries.csv"
 df = pd.read_csv(path)
 
 income = df["income"].to_numpy()
+income_log2 = np.log2(income)
+
 life_expectancy = df["life_expectancy"].to_numpy()
 education = df["education"].to_numpy()
+
+education3 = 3*education
  
-def section_d_income(income, life_expectancy):
 
-    var_x = np.var(income)
-    cov_x_y = np.cov(income, life_expectancy)[0][1]
-    x_avg = income.sum() / income.size
-    y_avg = life_expectancy.sum() / life_expectancy.size
-    b_LS = cov_x_y / var_x
-    a_LS = y_avg - b_LS * x_avg
 
-    x_LS = np.linspace(0, 1000000)
-    y_LS = a_LS + b_LS * x_LS
-
-    correlation_x_y = np.corrcoef(income, life_expectancy)[0][1]
-    R_squared = correlation_x_y ** 2
-    print("R^2 (Income & Life Expectancy)", R_squared)
-
-    pl.scatter(x=income, y=life_expectancy, color="black", marker=".")
-    pl.plot(x_LS, y_LS, "blue")
-    pl.title("Correlation btw Income & Life Expectancy, RSS")
-    pl.xlabel("Income")
-    pl.ylabel("Life Expectancy")
-    pl.show()
-
-def section_d_education(education, life_expectancy):
+def section_d(education, life_expectancy, filed ):
 
     var_x = np.var(education)
     cov_x_y = np.cov(education, life_expectancy)[0][1]
@@ -45,21 +28,23 @@ def section_d_education(education, life_expectancy):
     b_LS = cov_x_y / var_x
     a_LS = y_avg - b_LS * x_avg
 
-    x_LS = np.linspace(0, 20)
+    x_LS = np.linspace(np.amin(education), np.amax(education))
     y_LS = a_LS + b_LS * x_LS
+    print(a_LS, b_LS)
     correlation_x_y = np.corrcoef(education, life_expectancy)[0][1]
     R_squared = correlation_x_y ** 2
-    print("R^2 (Education & Life Expectancy)", R_squared)
+    print("R^2 (" + filed+ " & Life Expectancy)", R_squared)
 
     pl.scatter(x=education, y=life_expectancy, color="black", marker=".")
 
     pl.plot(x_LS, y_LS, "blue")
-    pl.title("Correlation btw Education & Life Expectancy, RSS")
-    pl.xlabel("education")
+    pl.title("Correlation btw " +  filed + " & Life Expectancy, RSS")
+    pl.xlabel(str(filed))
+    # pl.xscale("log")
     pl.ylabel("Life Expectancy")
     pl.show()
 
 
 
 
-section_d_income(income , life_expectancy)
+section_d(income_log2 , life_expectancy, "Income")
