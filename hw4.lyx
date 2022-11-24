@@ -2159,7 +2159,7 @@ F_{X}\left(x\right)=\mathbb{P}\left(X\leq x\right)=\int_{\infty}^{x}\lambda e^{-
 אנו רוצים לחשב את ההסתברות הבאה:
 \begin_inset Formula 
 \[
-\mathbb{P}\left(X\leq15\right)=1-e^{-3\cdot\frac{1}{4}}=0.527
+\mathbb{P}\left(X\leq\frac{1}{4}\right)=1-e^{-3\cdot\frac{1}{4}}=0.527
 \]
 
 \end_inset
